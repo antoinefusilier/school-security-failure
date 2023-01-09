@@ -70,6 +70,17 @@ $_DVWA[ 'db_user' ] = 'dvwa';
 $_DVWA[ 'db_password' ] = 'p@ssw0rd';
 $_DVWA[ 'db_database' ] = 'dvwa';
 ```
+Les identifiants de connection par défault de l'app sont :
+``` JSON
+first_login : {
+    "my_dock_url" : "http://localhost:82", 
+    "url_instruction" : "assets/dvwa_html/Instructions __ Damn Vulnerable Web Application (DVWA) v1.10 _Development_.html",
+    "id" : "admin",
+    "password" : "password" 
+}
+```
+
+
 ### Ressources
 Chez IBM 
 - [IBN Codage et chiffrement des mots de passe](https://www.ibm.com/docs/fr/was/9.0.5?topic=files-password-encoding-encryption)

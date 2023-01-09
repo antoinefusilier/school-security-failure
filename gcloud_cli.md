@@ -17,3 +17,14 @@ L'interface d'installation vous demandera la vérification de quelque paramètre
 - Accepter l'installation de la beta version afin d'avoir acces et pouvoir tester les dernières amélioration de Google Cli.
 - - A savoir Google en 2022/2023 fait énormement d'amélioration, modification et d'ajout sur ses serveur et ajuste toutes les semaines ses commandes CLI
 ![Google CLoud CLI Installing](assets/google_pictures/google_cloud_cli_installing.png)
+
+Une fois installer il vous demandera si vous voulez vous identifier avec votre compte google tout de suite, accepter `Y`
+Il vous redirera vers une fênetre avec le composant d'authentification Google.
+Une fois l'authentification terminée il vous faudra choisir ou créer un nouveau projet.
+
+![Choose a project](assets/google_pictures/google_cloud_cli_pick_cloud_project_to_use.png)
+
+Une fois sélectionné ou créer un message récapitulatif de settup tel que :
+
+![Settuped !](assets/google_pictures/google_cloud_cli_pick_cloud_project_choosed.png)
+[La page de succès d'authentification](https://cloud.google.com/sdk/auth_success) 

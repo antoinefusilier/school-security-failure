@@ -2,7 +2,9 @@
 
 ![Bureau Veritas Landing Cover Cybersecurity](assets/picture/bureau_veritas_cybersecurity_landing_cover.jpeg)
 - [Docker](./docker.md)
-- [Google]
+- [Google Cloud Container for comparison](./google_cloud_container.md)
+- [Lesson with DVWA](./cyber_security_failure.md)
+- []
 
 ## Docker Desktop
 

