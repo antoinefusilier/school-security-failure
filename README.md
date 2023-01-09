@@ -1,5 +1,6 @@
-# Leason of 3W Academy - Security failure
+# ![Logo 3WA](assets/picture/3wa-logo.png) Leason of 3W Academy - Security failure
 
+![Bureau Veritas Landing Cover Cybersecurity](assets/picture/bureau_veritas_cybersecurity_landing_cover.jpeg)
 - [Docker](./docker.md)
 - [Google]
 
