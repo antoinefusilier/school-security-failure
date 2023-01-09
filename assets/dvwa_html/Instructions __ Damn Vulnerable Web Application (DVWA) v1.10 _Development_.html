@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost:81/instructions.php -->
+<html lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+
+		<title>Instructions :: Damn Vulnerable Web Application (DVWA) v1.10 *Development*</title>
+
+		<link rel="stylesheet" type="text/css" href="./Instructions __ Damn Vulnerable Web Application (DVWA) v1.10 _Development__files/main.css">
+
+		<link rel="icon" type="\image/ico" href="http://localhost:81/favicon.ico">
+
+		<script type="text/javascript" src="./Instructions __ Damn Vulnerable Web Application (DVWA) v1.10 _Development__files/dvwaPage.js.téléchargement"></script>
+
+	</head>
+
+	<body class="home" cz-shortcut-listen="true"><audio class="audio-for-speech" src=""></audio><div class="translate-tooltip-mtz green sm-root translate hidden_translate">
+                    <div class="header-wrapper">
+                        <div class="header-controls">
+                            <span class="sound-translate"></span>
+                            <span class="copy green"></span>
+                            <span class="settings-translator"></span>
+                        </div>
+                        <div class="header-title">translator</div>
+                        <div class="translate-icons">
+                            <img class="from" src="http://localhost:81/instructions.php">
+                            <img class="translate-arrow" src="chrome-extension://ibppednjgooiepmkgdcoppnmbhmieefh/images/right-arrow.png">
+                            <div class="translate_to_dropdown">
+                                <button class="dropbtn dropdown-toggle" type="button" id="dropdownMenuButton1" aria-expanded="false"></button>
+                                <ul class="dropdown-content-wrapper languageSelector green">
+                                    <li><a class="dropdown-item" data-lang="af">Afrikaans</a></li>
+                                    <li><a class="dropdown-item" data-lang="sq">Albanian - shqipe</a></li>
+                                    <li><a class="dropdown-item" data-lang="ar">Arabic - ‎‫العربية‬‎</a></li>
+                                    <li><a class="dropdown-item" data-lang="hy">Armenian - Հայերէն</a></li>
+                                    <li><a class="dropdown-item" data-lang="az">Azerbaijani - azərbaycanca</a></li>
+                                    <li><a class="dropdown-item" data-lang="eu">Basque - euskara</a></li>
+                                    <li><a class="dropdown-item" data-lang="be">Belarusian - беларуская</a></li>
+                                    <li><a class="dropdown-item" data-lang="bn">Bengali - বাংলা</a></li>
+                                    <li><a class="dropdown-item" data-lang="bg">Bulgarian - български</a></li>
+                                    <li><a class="dropdown-item" data-lang="ca">Catalan - català</a></li>
+                                    <li><a class="dropdown-item" data-lang="zh-CN">Chinese - 中文（简体中文）</a></li>
+                                    <li><a class="dropdown-item" data-lang="zh-TW">Chinese - 中文 (繁體中文)</a></li>
+                                    <li><a class="dropdown-item" data-lang="hr">Croatian - hrvatski</a></li>
+                                    <li><a class="dropdown-item" data-lang="cs">Czech - čeština</a></li>
+                                    <li><a class="dropdown-item" data-lang="da">Danish - dansk</a></li>
+                                    <li><a class="dropdown-item" data-lang="nl">Dutch - Nederlands</a></li>
+                                    <li><a class="dropdown-item" data-lang="en">English</a></li>
+                                    <li><a class="dropdown-item" data-lang="eo">Esperanto - esperanto</a></li>
+                                    <li><a class="dropdown-item" data-lang="et">Estonian - eesti</a></li>
+                                    <li><a class="dropdown-item" data-lang="tl">Filipino</a></li>
+                                    <li><a class="dropdown-item" data-lang="fi">Finnish - suomi</a></li>
+                                    <li><a class="dropdown-item" data-lang="fr">French - français</a></li>
+                                    <li><a class="dropdown-item" data-lang="gl">Galician - galego</a></li>
+                                    <li><a class="dropdown-item" data-lang="ka">Georgian - ქართული</a></li>
+                                    <li><a class="dropdown-item" data-lang="de">German - Deutsch</a></li>
+                                    <li><a class="dropdown-item" data-lang="el">Greek - Ελληνικά</a></li>
+                                    <li><a class="dropdown-item" data-lang="gu">Gujarati - ગુજરાતી</a></li>
+                                    <li><a class="dropdown-item" data-lang="ht">Haitian Creole - kreyòl ayisyen</a></li>
+                                    <li><a class="dropdown-item" data-lang="iw">Hebrew - ‎‫עברית‬‎</a></li>
+                                    <li><a class="dropdown-item" data-lang="hi">Hindi - हिन्दी</a></li>
+                                    <li><a class="dropdown-item" data-lang="hu">Hungarian - magyar</a></li>
+                                    <li><a class="dropdown-item" data-lang="is">Icelandic - íslenska</a></li>
+                                    <li><a class="dropdown-item" data-lang="id">Indonesian - Bahasa Indonesia</a></li>
+                                    <li><a class="dropdown-item" data-lang="ga">Irish - Gaeilge</a></li>
+                                    <li><a class="dropdown-item" data-lang="it">Italian - italiano</a></li>
+                                    <li><a class="dropdown-item" data-lang="ja">Japanese - 日本語</a></li>
+                                    <li><a class="dropdown-item" data-lang="kn">Kannada - ಕನ್ನಡ</a></li>
+                                    <li><a class="dropdown-item" data-lang="ko">Korean - 한국어</a></li>
+                                    <li><a class="dropdown-item" data-lang="la">Latin - Lingua Latina</a></li>
+                                    <li><a class="dropdown-item" data-lang="lv">Latvian - latviešu</a></li>
+                                    <li><a class="dropdown-item" data-lang="lt">Lithuanian - lietuvių</a></li>
+                                    <li><a class="dropdown-item" data-lang="mk">Macedonian - македонски</a></li>
+                                    <li><a class="dropdown-item" data-lang="ms">Malay - Bahasa Melayu</a></li>
+                                    <li><a class="dropdown-item" data-lang="mt">Maltese - Malti</a></li>
+                                    <li><a class="dropdown-item" data-lang="no">Norwegian - norsk</a></li>
+                                    <li><a class="dropdown-item" data-lang="fa">Persian - ‎‫فارسی‬‎</a></li>
+                                    <li><a class="dropdown-item" data-lang="pl">Polish - polski</a></li>
+                                    <li><a class="dropdown-item" data-lang="pt">Portuguese - português</a></li>
+                                    <li><a class="dropdown-item" data-lang="ro">Romanian - română</a></li>
+                                    <li><a class="dropdown-item" data-lang="ru">Russian - русский</a></li>
+                                    <li><a class="dropdown-item" data-lang="sr">Serbian - Српски</a></li>
+                                    <li><a class="dropdown-item" data-lang="sk">Slovak - slovenčina</a></li>
+                                    <li><a class="dropdown-item" data-lang="sl">Slovenian - slovenščina</a></li>
+                                    <li><a class="dropdown-item" data-lang="es">Spanish - español</a></li>
+                                    <li><a class="dropdown-item" data-lang="sw">Swahili - Kiswahili</a></li>
+                                    <li><a class="dropdown-item" data-lang="sv">Swedish - svenska</a></li>
+                                    <li><a class="dropdown-item" data-lang="ta">Tamil - தமிழ்</a></li>
+                                    <li><a class="dropdown-item" data-lang="te">Telugu - తెలుగు</a></li>
+                                    <li><a class="dropdown-item" data-lang="th">Thai - ไทย</a></li>
+                                    <li><a class="dropdown-item" data-lang="tr">Turkish - Türkçe</a></li>
+                                    <li><a class="dropdown-item" data-lang="uk">Ukrainian - українська</a></li>
+                                    <li><a class="dropdown-item" data-lang="ur">Urdu - ‎‫اردو‬‎</a></li>
+                                    <li><a class="dropdown-item" data-lang="vi">Vietnamese - Tiếng Việt</a></li>
+                                    <li><a class="dropdown-item" data-lang="cy">Welsh - Cymraeg</a></li>
+                                    <li><a class="dropdown-item" data-lang="yi">Yiddish - יידיש</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="translated-text">
+                        <div id="words" class="words"></div>
+                        <div class="sentences green"></div>
+                    </div>
+                    <div class="trans_controls">
+                        <div class="trans_controls__control-wrapper double_click">
+                            <span class="trans_controls__toggle dbl-click active" data-store="double_click">
+                                <div class="trans_controls__inner-circle"></div>
+                            </span>
+                            <span class="trans_controls__description">
+                            Double-click
+                            </span>
+                        </div>
+                        <div class="trans_controls__control-wrapper selection">
+                            <span class="trans_controls__toggle icon-trans active" data-store="icon_trans">
+                                <div class="trans_controls__inner-circle"></div>
+                            </span>
+                            <span class="trans_controls__description">
+                            Select to translate
+                            </span>
+                        </div>
+                    </div>
+                </div><span class="translate-button-mtz green hidden_translate" style="top: 2611.40625px;left: 946.140625px;"></span>
+		<div id="container">
+
+			<div id="header">
+
+				<img src="./Instructions __ Damn Vulnerable Web Application (DVWA) v1.10 _Development__files/logo.png" alt="Damn Vulnerable Web Application">
+
+			</div>
+
+			<div id="main_menu">
+
+				<div id="main_menu_padded">
+				<ul class="menuBlocks"><li class=""><a href="http://localhost:81/setup.php">Setup DVWA</a></li>
+<li class="selected"><a href="http://localhost:81/instructions.php">Instructions</a></li>
+</ul><ul class="menuBlocks"><li class=""><a href="http://localhost:81/about.php">About</a></li>
+</ul>
+				</div>
+
+			</div>
+
+			<div id="main_body">
+
+				
+<div class="body_padded">
+	<h1>Instructions</h1>
+
+	<div class="submenu"><span class="submenu_item selected"><a href="http://localhost:81/instructions.php?doc=readme">Read Me</a></span><span class="submenu_item"><a href="http://localhost:81/instructions.php?doc=PDF">PDF Guide</a></span><span class="submenu_item"><a href="http://localhost:81/instructions.php?doc=changelog">Change Log</a></span><span class="submenu_item"><a href="http://localhost:81/instructions.php?doc=copying">Copying</a></span><span class="submenu_item"><a href="http://localhost:81/instructions.php?doc=PHPIDS-license">PHPIDS License</a></span></div>
+
+	<span class="fixed">
+		# DAMN VULNERABLE WEB APPLICATION<br>
+<br>
+Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students &amp; teachers to learn about web application security in a controlled class room environment.<br>
+<br>
+The aim of DVWA is to **practice some of the most common web vulnerabilities**, with **various levels of difficulty**, with a simple straightforward interface.<br>
+Please note, there are **both documented and undocumented vulnerabilities** with this software. This is intentional. You are encouraged to try and discover as many issues as possible.<br>
+- - -<br>
+<br>
+## WARNING!<br>
+<br>
+Damn Vulnerable Web Application is damn vulnerable! **Do not upload it to your hosting provider's public html folder or any Internet facing servers**, as they will be compromised. It is recommended using a virtual machine (such as [VirtualBox](<a href="https://www.virtualbox.org/" target="_blank">https://www.virtualbox.org/</a>) or [VMware](<a href="https://www.vmware.com/" target="_blank">https://www.vmware.com/</a>)), which is set to NAT networking mode. Inside a guest machine, you can download and install [XAMPP](<a href="https://www.apachefriends.org/en/xampp.html" target="_blank">https://www.apachefriends.org/en/xampp.html</a>) for the web server and database.<br>
+<br>
+### Disclaimer<br>
+<br>
+We do not take responsibility for the way in which any one uses this application (DVWA). We have made the purposes of the application clear and it should not be used maliciously. We have given warnings and taken measures to prevent users from installing DVWA on to live web servers. If your web server is compromised via an installation of DVWA, it is not our responsibility, it is the responsibility of the person/s who uploaded and installed it.<br>
+<br>
+- - -<br>
+<br>
+## License<br>
+<br>
+This file is part of Damn Vulnerable Web Application (DVWA).<br>
+<br>
+Damn Vulnerable Web Application (DVWA) is free software: you can redistribute it and/or modify<br>
+it under the terms of the GNU General Public License as published by<br>
+the Free Software Foundation, either version 3 of the License, or<br>
+(at your option) any later version.<br>
+<br>
+Damn Vulnerable Web Application (DVWA) is distributed in the hope that it will be useful,<br>
+but WITHOUT ANY WARRANTY; without even the implied warranty of<br>
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<br>
+GNU General Public License for more details.<br>
+<br>
+You should have received a copy of the GNU General Public License<br>
+along with Damn Vulnerable Web Application (DVWA).  If not, see <a href="http://www.gnu.org/licenses/" target="_blank">http://www.gnu.org/licenses/.</a><br>
+<br>
+- - -<br>
+<br>
+## Download<br>
+<br>
+While there are various versions of DVWA around, the only supported version is the latest source from the official GitHub repository. You can either clone it from the repo:<br>
+<br>
+```<br>
+git clone <a href="https://github.com/ethicalhack3r/DVWA.git" target="_blank">https://github.com/ethicalhack3r/DVWA.git</a><br>
+```<br>
+<br>
+Or [download a ZIP of the files](<a href="https://github.com/ethicalhack3r/DVWA/archive/master.zip" target="_blank">https://github.com/ethicalhack3r/DVWA/archive/master.zip</a>).<br>
+<br>
+- - -<br>
+<br>
+## Installation<br>
+<br>
+**Please make sure your config/config.inc.php file exists. Only having a config.inc.php.dist will not be sufficient and you'll have to edit it to suit your environment and rename it to config.inc.php. [Windows may hide the trailing extension.](<a href="https://support.microsoft.com/en" target="_blank">https://support.microsoft.com/en</a>-in/help/865219/how-to-show-or-hide-file-name-extensions-in-windows-explorer)**<br>
+<br>
+### Installation Videos<br>
+<br>
+- [How to setup DVWA (Damn Vulnerable Web Application) on Ubuntu](<a href="https://www.youtube.com/watch?v=5BG6iq" target="_blank">https://www.youtube.com/watch?v=5BG6iq</a>_AUvM) [21:01 minutes]<br>
+- [Installing Damn Vulnerable Web Application (DVWA) on Windows 10](<a href="https://www.youtube.com/watch?v=cak2lQvBRAo" target="_blank">https://www.youtube.com/watch?v=cak2lQvBRAo</a>) [12:39 minutes]<br>
+<br>
+### Windows + XAMPP<br>
+<br>
+The easiest way to install DVWA is to download and install [XAMPP](<a href="https://www.apachefriends.org/en/xampp.html" target="_blank">https://www.apachefriends.org/en/xampp.html</a>) if you do not already have a web server setup.<br>
+<br>
+XAMPP is a very easy to install Apache Distribution for Linux, Solaris, Windows and Mac OS X. The package includes the Apache web server, MySQL, PHP, Perl, a FTP server and phpMyAdmin.<br>
+<br>
+XAMPP can be downloaded from:<br>
+<a href="https://www.apachefriends.org/en/xampp.html" target="_blank">https://www.apachefriends.org/en/xampp.html</a><br>
+<br>
+Simply unzip dvwa.zip, place the unzipped files in your public html folder, then point your browser to: <a href="http://127.0.0.1/dvwa/setup.php" target="_blank">http://127.0.0.1/dvwa/setup.php</a><br>
+<br>
+### Linux Packages<br>
+<br>
+If you are using a Debian based Linux distribution, you will need to install the following packages _(or their equivalent)_:<br>
+<br>
+`apt-get -y install apache2 mariadb-server php php-mysqli php-gd libapache2-mod-php`<br>
+<br>
+The site will work with MySQL instead of MariaDB but we strongly recommend MariaDB as it works out of the box whereas you have to make changes to get MySQL to work correctly.<br>
+<br>
+### Database Setup<br>
+<br>
+To set up the database, simply click on the `Setup DVWA` button in the main menu, then click on the `Create / Reset Database` button. This will create / reset the database for you with some data in.<br>
+<br>
+If you receive an error while trying to create your database, make sure your database credentials are correct within `./config/config.inc.php`. *This differs from config.inc.php.dist, which is an example file.*<br>
+<br>
+The variables are set to the following by default:<br>
+<br>
+```php<br>
+$_DVWA[ 'db_user' ] = 'dvwa';<br>
+$_DVWA[ 'db_password' ] = 'p@ssw0rd';<br>
+$_DVWA[ 'db_database' ] = 'dvwa';<br>
+```<br>
+<br>
+Note, if you are using MariaDB rather than MySQL (MariaDB is default in Kali), then you can't use the database root user, you must create a new database user. To do this, connect to the database as the root user then use the following commands:<br>
+<br>
+```mysql<br>
+mysql&gt; create database dvwa;<br>
+Query OK, 1 row affected (0.00 sec)<br>
+<br>
+mysql&gt; create user dvwa@localhost identified by 'p@ssw0rd';<br>
+Query OK, 0 rows affected (0.01 sec)<br>
+<br>
+mysql&gt; grant all on dvwa.* to dvwa@localhost;<br>
+Query OK, 0 rows affected (0.01 sec)<br>
+<br>
+mysql&gt; flush privileges;<br>
+Query OK, 0 rows affected (0.00 sec)<br>
+```<br>
+<br>
+### Other Configuration<br>
+<br>
+Depending on your Operating System, as well as version of PHP, you may wish to alter the default configuration. The location of the files will be different on a per-machine basis.<br>
+<br>
+**Folder Permissions**:<br>
+<br>
+* `./hackable/uploads/` - Needs to be writeable by the web service (for File Upload).<br>
+* `./external/phpids/0.6/lib/IDS/tmp/phpids_log.txt` - Needs to be writable by the web service (if you wish to use PHPIDS).<br>
+<br>
+**PHP configuration**:<br>
+<br>
+* `allow_url_include = on` - Allows for Remote File Inclusions (RFI)   [[allow_url_include](<a href="https://secure.php.net/manual/en/filesystem.configuration.php" target="_blank">https://secure.php.net/manual/en/filesystem.configuration.php</a>#ini.allow-url-include)]<br>
+* `allow_url_fopen = on` -  Allows for Remote File Inclusions (RFI)    [[allow_url_fopen](<a href="https://secure.php.net/manual/en/filesystem.configuration.php" target="_blank">https://secure.php.net/manual/en/filesystem.configuration.php</a>#ini.allow-url-fopen)]<br>
+* `safe_mode = off` - (If PHP &lt;= v5.4) Allows for SQL Injection (SQLi) [[safe_mode](<a href="https://secure.php.net/manual/en/features.safe" target="_blank">https://secure.php.net/manual/en/features.safe</a>-mode.php)]<br>
+* `magic_quotes_gpc = off` - (If PHP &lt;= v5.4) Allows for SQL Injection (SQLi) [[magic_quotes_gpc](<a href="https://secure.php.net/manual/en/security.magicquotes.php" target="_blank">https://secure.php.net/manual/en/security.magicquotes.php</a>)]<br>
+* `display_errors = off` - (Optional) Hides PHP warning messages to make it less verbose [[display_errors](<a href="https://secure.php.net/manual/en/errorfunc.configuration.php" target="_blank">https://secure.php.net/manual/en/errorfunc.configuration.php</a>#ini.display-errors)]<br>
+<br>
+**File: `config/config.inc.php`**:<br>
+<br>
+* `$_DVWA[ 'recaptcha_public_key' ]` &amp; `$_DVWA[ 'recaptcha_private_key' ]` - These values need to be generated from: <a href="https://www.google.com/recaptcha/admin/create" target="_blank">https://www.google.com/recaptcha/admin/create</a><br>
+<br>
+### Default Credentials<br>
+<br>
+**Default username = `admin`**<br>
+<br>
+**Default password = `password`**<br>
+<br>
+_...can easily be brute forced ;)_<br>
+<br>
+Login URL: <a href="http://127.0.0.1/dvwa/login.php" target="_blank">http://127.0.0.1/dvwa/login.php</a><br>
+<br>
+- - -<br>
+<br>
+## Docker Container<br>
+- [dockerhub page](<a href="https://hub.docker.com/r/vulnerables/web" target="_blank">https://hub.docker.com/r/vulnerables/web</a>-dvwa/)<br>
+`docker run --rm -it -p 80:80 vulnerables/web-dvwa`<br>
+<br>
+Please ensure you are using aufs due to previous MySQL issues. Run `docker info` to check your storage driver. If it isn't aufs, please change it as such. There are guides for each operating system on how to do that, but they're quite different so we won't cover that here.<br>
+<br>
+- - -<br>
+<br>
+## Troubleshooting<br>
+<br>
+These assume you are on a Debian based distro, such as Debian, Ubuntu and Kali. For other distros, follow along, but update the command where appropriate.<br>
+<br>
+### "Access denied" running setup<br>
+<br>
+If you see the following when running the setup script it means the username or password in the config file do not match those configured on the database:<br>
+<br>
+```<br>
+Database Error #1045: Access denied for user 'notdvwa'@'localhost' (using password: YES).<br>
+```<br>
+<br>
+The error is telling you that you are using the username `notdvwa`.<br>
+<br>
+The following error says you have pointed the config file at the wrong database.<br>
+<br>
+```<br>
+SQL: Access denied for user 'dvwa'@'localhost' to database 'notdvwa'<br>
+```<br>
+<br>
+It is saying that you are using the user `dvwa` and trying to connect to the database `notdvwa`.<br>
+<br>
+The first thing to do is to double check what you think you put in the config file is what is actually there.<br>
+<br>
+If it matches what you expect, the next thing to do is to check you can log in as the user on the command line. Assuming you have a database user of `dvwa` and a password of `p@ssw0rd`, run the following command:<br>
+<br>
+```<br>
+mysql -u dvwa -pp@ssw0rd -D dvwa<br>
+```<br>
+<br>
+*Note: There is no space after the -p*<br>
+<br>
+If you see the following, the password is correct:<br>
+<br>
+```<br>
+Welcome to the MariaDB monitor.  Commands end with ; or \g.<br>
+Your MariaDB connection id is 14<br>
+Server version: 10.3.22-MariaDB-0ubuntu0.19.10.1 Ubuntu 19.10<br>
+<br>
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.<br>
+<br>
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.<br>
+<br>
+MariaDB [dvwa]&gt;<br>
+```<br>
+<br>
+As you can connect on the command line, it is likely something wrong in the config file, double check that and then raise an issue if you still can't get things working.<br>
+<br>
+If you see the following, the username or password you are using is wrong. Repeat the setup steps and make sure you use the same username and password throughout the process.<br>
+<br>
+```<br>
+ERROR 1045 (28000): Access denied for user 'dvwa'@'localhost' (using password: YES)<br>
+```<br>
+<br>
+If you get the following, the user credentials are correct but the user does not have access to the database. Again, repeat the setup steps and check the database name you are using.<br>
+<br>
+```<br>
+ERROR 1044 (42000): Access denied for user 'dvwa'@'localhost' to database 'dvwa'<br>
+```<br>
+<br>
+The final error you could get is this:<br>
+<br>
+```<br>
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)<br>
+```<br>
+<br>
+This is not an authentication issue but tells you that the database server is not running. Start it with the following<br>
+<br>
+```sh<br>
+sudo service mysql start<br>
+```<br>
+<br>
+### Unknown authentication method<br>
+<br>
+With the most recent versions of MySQL, PHP can no longer talk to the database in its default configuration. If you try to run the setup script and get the following message it means you have configuration.<br>
+<br>
+```<br>
+Database Error #2054: The server requested authentication method unknown to the client.<br>
+```<br>
+<br>
+You have two options, the easiest is to uninstall MySQL and install MariaDB. The following is the official guide from the MariaDB project:<br>
+<br>
+&lt;<a href="https://mariadb.com/resources/blog/how" target="_blank">https://mariadb.com/resources/blog/how</a>-to-migrate-from-mysql-to-mariadb-on-linux-in-five-steps/&gt;<br>
+<br>
+Alternatively, follow these steps:<br>
+<br>
+1. As root, edit the following file: `/etc/mysql/mysql.conf.d/mysqld.cnf`<br>
+1. Under the line `[mysqld]`, add the following:<br>
+  `default-authentication-plugin=mysql_native_password`<br>
+1. Restart the database: `sudo service mysql restart`<br>
+1. Check the authentication method for your database user:<br>
+<br>
+    ```sql<br>
+    mysql&gt; select Host,User, plugin from mysql.user where mysql.user.User = 'dvwa';<br>
+    +-----------+------------------+-----------------------+<br>
+    | Host      | User             | plugin                |<br>
+    +-----------+------------------+-----------------------+<br>
+    | localhost | dvwa             | caching_sha2_password |<br>
+    +-----------+------------------+-----------------------+<br>
+    1 rows in set (0.00 sec)<br>
+    ```<br>
+1. You'll likely see `caching_sha2_password`. If you do, run the following command:<br>
+<br>
+    ```sql<br>
+    mysql&gt; ALTER USER dvwa@localhost IDENTIFIED WITH mysql_native_password BY 'p@ssw0rd';<br>
+    ```<br>
+1. Re-running the check, you should now see `mysql_native_password`.<br>
+    ```sql<br>
+    mysql&gt; select Host,User, plugin from mysql.user where mysql.user.User = 'dvwa';<br>
+    +-----------+------+-----------------------+<br>
+    | Host      | User | plugin                |<br>
+    +-----------+------+-----------------------+<br>
+    | localhost | dvwa | mysql_native_password |<br>
+    +-----------+------+-----------------------+<br>
+    1 row in set (0.00 sec)<br>
+    ```<br>
+<br>
+After all that, the setup process should now work as normal.<br>
+<br>
+If you want more information see the following page: &lt;<a href="https://www.php.net/manual/en/mysqli.requirements.php" target="_blank">https://www.php.net/manual/en/mysqli.requirements.php</a>&gt;.<br>
+<br>
+### Database Error #2002: No such file or directory.<br>
+<br>
+The database server is not running. In a Debian based distro this can be done with:<br>
+<br>
+```sh<br>
+sudo service mysql start<br>
+```<br>
+<br>
+### Errors "MySQL server has gone away" and "Packets out of order"<br>
+<br>
+There are a few reasons you could be getting these errors, but the most likely is the version of database server you are running is not compatible with the version of PHP.<br>
+<br>
+This is most commonly found when you are running the latest version of MySQL as PHP and it do not get on well. Best advice, ditch MySQL and install MariaDB as this is not something we can support.<br>
+<br>
+For more information, see:<br>
+<br>
+&lt;<a href="https://www.ryadel.com/en/fix" target="_blank">https://www.ryadel.com/en/fix</a>-mysql-server-gone-away-packets-order-similar-mysql-related-errors/&gt;<br>
+<br>
+### SQL Injection won't work on PHP v5.2.6.<br>
+<br>
+PHP 5.x reached end of life in January 2019 so we would recommend running DVWA with a current 7.x version, if you must use 5.x...<br>
+<br>
+If you are using PHP v5.2.6 or above, you will need to do the following in order for SQL injection and other vulnerabilities to work.<br>
+<br>
+In `.htaccess`:<br>
+<br>
+Replace:<br>
+<br>
+```php<br>
+<ifmodule mod_php5.c=""><br>
+    php_flag magic_quotes_gpc off<br>
+    #php_flag allow_url_fopen on<br>
+    #php_flag allow_url_include on<br>
+</ifmodule><br>
+```<br>
+<br>
+With:<br>
+<br>
+```php<br>
+<ifmodule mod_php5.c=""><br>
+    magic_quotes_gpc = Off<br>
+    allow_url_fopen = On<br>
+    allow_url_include = On<br>
+</ifmodule><br>
+```<br>
+<br>
+#### Command Injection won't work.<br>
+<br>
+-A. Apache may not have high enough privileges to run commands on the web server. If you are running DVWA under Linux make sure you are logged in as root. Under Windows log in as Administrator.<br>
+<br>
+### Why can't the database connect on CentOS?<br>
+<br>
+You may be running into problems with SELinux.  Either disable SELinux or run this command to allow the web server to talk to the database:<br>
+<br>
+```<br>
+setsebool -P httpd_can_network_connect_db 1<br>
+```<br>
+<br>
+### Anything else<br>
+<br>
+For the latest troubleshooting information please read both open and closed tickets in the git repo:<br>
+<br>
+&lt;<a href="https://github.com/ethicalhack3r/DVWA/issues" target="_blank">https://github.com/ethicalhack3r/DVWA/issues</a>&gt;<br>
+<br>
+Before submitting a ticket, please make sure you are running the latest version of the code from the repo. This is not the latest release, this is the latest code from the master branch.<br>
+<br>
+If raising a ticket, please submit at least the following information:<br>
+<br>
+- Operating System<br>
+- The last 5 lines from the web server error log directly after whatever error you are reporting occurs<br>
+- If it is a database authentication problem, go through the steps above and screenshot each step. Submit these along with a screenshot of the section of the config file showing the database user and password.<br>
+- A full description of what is going wrong, what you expect to happen, and what you have tried to do to fix it. "login broken" is no enough for us to understand your problem and to help fix it.<br>
+<br>
+- - -<br>
+<br>
+## Links<br>
+<br>
+Homepage: <a href="http://www.dvwa.co.uk/" target="_blank">http://www.dvwa.co.uk/</a><br>
+<br>
+Project Home: <a href="https://github.com/ethicalhack3r/DVWA" target="_blank">https://github.com/ethicalhack3r/DVWA</a><br>
+<br>
+*Created by the DVWA team*<br>
+<br>
+
+	</span>
+</div>
+				<br><br>
+				
+
+			</div>
+
+			<div class="clear">
+			</div>
+
+			<div id="system_info">
+				
+			</div>
+
+			<div id="footer">
+
+				<p>Damn Vulnerable Web Application (DVWA) v1.10 *Development*</p>
+				<script src="./Instructions __ Damn Vulnerable Web Application (DVWA) v1.10 _Development__files/add_event_listeners.js.téléchargement"></script>
+
+			</div>
+
+		</div>
+
+	
+
+</body></html>
