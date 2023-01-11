@@ -8,6 +8,8 @@ Il y a plusieur type et norme de cryptographie, les principales :
 
 - Cryptographie Incrémentale : 
 ![](assets/schema_cryptographie_incrementale_1.png)
+
+[**Voir la mise en oeuvre et documentation**](assets/EdA_cryptographie_incrementale_revision_mars_2019.pdf) de [HAL Science](https://hal.science/)
 ```maths
 DÉFINITION 1. — Un système cryptographique incrémental est spécifié par un 4-
 uplet Π = (G, T , C, I) d’algorithmes en temps polynomial :
