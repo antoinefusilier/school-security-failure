@@ -25,5 +25,3 @@ Dans cet exercice, une commande php résumant l'utilisation du mot de passe stoc
 pour lire le contenu du fichier index.php, nous allons entré l'ajout de la commande `& ls` premièrement pour localisé le fichier, puis nous allons faire un `& cat index.php` afin d'afficher en HTML le code de la page index.php
 
 A vous de trouver alors quel fichier comporte le mot de passe ! Car aucune solution de hacking n'est authorisé sur internet !!
-
-
