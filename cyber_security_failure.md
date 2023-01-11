@@ -144,5 +144,5 @@ Attention à remplacer l'url avec l'encodage via Url Encode/Decode
 [Voir le site Root Me ](https://www.root-me.org/)
 
 ### Exercice 1 - XSS Cahllenge Stored 1
-w
+
 [Aller à l'exercice sur le site Root Me](https://www.root-me.org/fr/Challenges/Web-Client/XSS-Stockee-1?q=%2Ffr%2FChallenges%2FWeb-Client%2FXSS-Stored-1&lang=fr)
