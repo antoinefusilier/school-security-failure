@@ -33,9 +33,18 @@ Les conditions :
 
 *Deuxième faille qui fait suite à la première : dans la comparaison du mot de passe, $data, qui peut être modifier dans les cookie on le rappel, demande seulement une égalité en valeur ! **FAILLE DE COMPAISON Non strict !** *
 
-*On se rappel que `TRUE` + une chaine (string) = `true`, et qu'un hash sha256 commençant par 0e vaut `TRUE` :) ;)
+*On se rappel que `TRUE` + une chaine (string) = `true`, et qu'un hash sha256 commençant par `0e` vaut `NULL` :) ;)
+
+Mais la condition qui nous renvoie vers la page admin est :
+```php
+if($_SESSION['login'] === "superadmin")
+```
+Donc on doit affecter "superadmin" à $_SESSION['login'] une fois la vérification de cookie, en gros le login est "superadmin"
 
 
+```php
+$_SESSION['login'] = $data['login'];
+```
 
 
 ```php
