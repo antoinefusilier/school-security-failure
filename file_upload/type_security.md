@@ -75,7 +75,7 @@ Si on ouvre maintenant ces fichiers avec un éditeur hexadécimal :
 - Fichier Zippé
 ![Picture Zipped](assets/example_1px_paint_zipped_hexa_editor.png)
 
-
+On peut remarquer que le premier offset de bit, et interprété en ANSI (Soit ASCII, IOS-8899) en première ligne l'entête du fichier. Ici **PK** 
 
 
 
