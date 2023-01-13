@@ -1,0 +1,146 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	width: 940px;
+	font: 13px/22px Helvetica, Arial, sans-serif;
+	color : white;
+	background-color: black;
+	background-image : url(../imgs/overlay-stars.gif);
+}
+
+a {
+  color:red;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+a:hover { color:aqua; }
+
+#page {
+	margin: 10px;
+}
+h1 {
+	display: inline;
+	margin:0;
+	padding:0;
+}
+h2 {
+	font-size: 28px;
+}
+
+p {
+	padding-bottom: 22px;
+}
+
+#nav {
+}
+
+#nav ul {
+	margin:0;
+	padding: 10px;
+	margin-left: 30px;
+	list-style:none;
+}
+
+#nav li {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+#nav a {
+	margin-right: 20px;
+	width: 140px;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: aqua;
+}
+
+#nav ul li.selected a {
+	color: #fff;
+}
+#content {
+	display: table;
+}
+
+#main {
+	display: table-cell;
+	width: 620px;
+	padding-right: 22px;
+	vertical-align: top;
+}
+
+#side {
+	display: table-cell;
+	width: 300px;
+	text-align: center;
+}
+#img2 {
+background-color: transparent;
+     -moz-box-shadow: 0 0 0 0;
+     -webkit-box-shadow: 0 0 0 0;
+     box-shadow: 0 0 0 0;
+    
+}
+
+img {
+	-moz-box-shadow: 0 0 100px #FFFFFF inset, 0 0 100px #FFFFFF inset, 0 0 100px #FFFFFF;
+	-webkit-box-shadow: 0 0 100px #FFFFFF inset, 0 0 100px #FFFFFF inset, 0 0 100px #FFFFFF;
+	box-shadow: 0 0 100px #FFFFFF inset, 0 0 100px #FFFFFF inset, 0 0 100px #FFFFFF;
+}
+img:after, img:before { display: none; }
+
+form {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+form fieldset {
+	font-weight: bold;
+}
+
+form p {
+	display: table;
+	margin-bottom: 22px;
+	padding: 0 0px;
+}
+
+form label {
+	display: table-cell;
+	width: 140px;
+	padding-right: 20px;
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+form input[type="text"], form input[type="email"], form input[type="url"], form input[type="password"]{
+	display: table-cell;
+	width: 300px;
+	height: 20px;
+	border: 1px solid #d7d7d7;
+}
+form input[type="submit"] {
+	margin-left: 162px;
+}
+.long {
+	width: 400px
+}
+
+.error {
+	display: block;
+	border: 1px solid #FF0000;
+	padding: 5px;
+	color: red;
+	font-weight: bold;
+}
