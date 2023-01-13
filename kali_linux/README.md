@@ -4,7 +4,7 @@
 ## Ressources
 
 - [11 Outils de brute force attacks](https://geekflare.com/fr/brute-force-attack-tools/)
-
+- [](https://www.leblogduhacker.fr/installer-kali-linux-sous-windows-en-10min-wsl/)
 
 
 ## <a id="install"> Installation
