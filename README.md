@@ -1,10 +1,29 @@
 # ![Logo 3WA](assets/picture/3wa-logo.png) Leason of 3W Academy - Security failure
 
 ![Bureau Veritas Landing Cover Cybersecurity](assets/picture/bureau_veritas_cybersecurity_landing_cover.jpeg)
+
+[Voir les parties du repository](#parts)
+Ensemble des notions de Cyber Sécurité vu et appronfondit au cours d'une formation à la 3W Academy, haute école du digital.
+Passant des failles XSS au gros brute force en Kali Linux, le projet de ce repo est le regroupement des dernière méthode de crakage et d'utilisation de failles de sécurité.
+
+*Ce repository, pour l'instant en français, est actuellement en cours de rédaction et n'est pas du tout terminé.*
+
+
+
+# <a id="parts"> Les différentes parties du repository :_)
+
+- [Le brute force (En cours...)](./brute_force)
+
+
+
+# Ressources
 - [Docker](./docker.md)
 - [Google Cloud Container for comparison](./google_cloud_container.md)
 - [Lesson with DVWA](./cyber_security_failure.md)
 - []
+
+
+
 
 ## Docker Desktop
 
