@@ -11,4 +11,7 @@
 
 # <a id="all_challenges"> Tous les challenges
 
-[Marabou(Root ME)](https://www.root-me.org/fr/Challenges/Realiste/Marabout)
+[Marabou(Root ME)](./root_me_marabou.md)
+[Challenge de Romain Bourel](https://orga.romain-bourel.fr/)
+[Serge Dev](https://sergedev.xyz/Social/accueil)
+
